@@ -1,7 +1,19 @@
 import "./App.css";
+import About from "./components/About";
+import Header from "./components/Header";
+import Project from "./components/Project";
+import { projectData } from "./projectData";
 
 function App() {
-  return <h1 className="text-3xl font-bold border border-black text-center">Joe Esteva</h1>;
+  return (
+    <>
+      <Header />
+      <About />
+      {projectData.map((project) => (
+        <Project project={project} />
+      ))}
+    </>
+  );
 }
 
 export default App;
