@@ -16,6 +16,14 @@ h2 {
 	font-family: "roboto-medium";
 }
 
+a {
+	margin: 1em;
+	padding: .25em;
+	margin-bottom: 5em;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
 #about {
 	font-family: "roboto-medium";
 }

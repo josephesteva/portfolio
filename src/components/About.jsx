@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div id="about" className="flex justify-center mt-10">
-        <div className="w-1/3 object-center">
+        <div className="w-1/2">
           <h3 className="text-2xl font-bold">About</h3>
           <p>
             I'm a fullstack web developer based in the Washington DC area. I am passionate about finding efficient
