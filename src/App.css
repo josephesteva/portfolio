@@ -18,10 +18,17 @@ h2 {
 
 a {
 	margin: 1em;
-	padding: .25em;
+	padding: .5em;
 	margin-bottom: 5em;
-	border: 2px solid black;
 	border-radius: 6px;
+	color: white!important;
+	font-weight: 600;
+	background-color: rgb(89, 171, 238);
+}
+
+a:hover{
+	box-shadow: 2px 2px 3px rgb(179, 176, 176);
+	filter: brightness(105%)
 }
 
 #about {
