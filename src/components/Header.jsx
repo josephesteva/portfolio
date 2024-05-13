@@ -3,8 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <>
-      <h1 className="text-6xl text-blue-700 font-bold text-center mt-5 ">JOE ESTEVA</h1>
-      <h2 className="text-3xl text-sky-400 italic text-center mt-2">Software Engineer</h2>
+      <div className="text-4xl bg-slate-400 mb-4 text-center">Navbar</div>
     </>
   );
 }

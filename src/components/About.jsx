@@ -3,6 +3,11 @@ import React from "react";
 function About() {
   return (
     <>
+      <div className="flex justify-center">
+        <img src="/images/PortfolioPic2.png" className="rounded-full w-1/4" />
+      </div>
+      <h1 className="text-6xl text-blue-700 font-bold text-center mt-5 ">JOE ESTEVA</h1>
+      <h2 className="text-3xl text-sky-400 italic text-center mt-2">Software Engineer</h2>
       <div id="about" className="flex justify-center mt-10">
         <div className="w-1/2">
           <h3 className="text-2xl font-bold">About</h3>
