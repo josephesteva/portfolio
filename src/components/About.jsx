@@ -16,6 +16,14 @@ function About() {
             solutions to meaningful problems. I enjoy collaborating with a team to bring exciting applications to life.
             I love to spend time outdoors in my free time and am a fan of skiing, rock climbing, and mountain biking!
           </p>
+          <div>
+            <div className="flex items-center gap-3 mt-5">
+              <p className="">You can also find an interactive retro-2d version of my portfolio:</p>
+              <a href="https://josephesteva.github.io/2d-game-portfolio/" target="_blank">
+                <img className="w-9 h-9" src="/images/pixel-door.png" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

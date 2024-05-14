@@ -8,10 +8,10 @@ export default function Project({ project }) {
           <div className="flex justify-between pb-3 border-b-2 border-blue-300">
             <h3 className="text-3xl font-semibold">{project.title}</h3>
             <div>
-              <a href={project.siteLink} target="_blank">
+              <a classname="link-button" href={project.siteLink} target="_blank">
                 Check it Out
               </a>
-              <a href={project.githubLink} target="_blank">
+              <a classname="link-button" href={project.githubLink} target="_blank">
                 Github Link
               </a>
             </div>
@@ -24,7 +24,7 @@ export default function Project({ project }) {
               </div>
               <div>
                 <h3 className="text-2xl underline">Tech</h3>
-                <p>{project.description}</p>
+                <p>{project.tech}</p>
               </div>
             </div>
             <div>

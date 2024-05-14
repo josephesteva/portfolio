@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: roboto-regular;
+	src: url(roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
 	font-family: roboto-medium;
 	src: url(roboto/Roboto-Medium.ttf);
 }
@@ -26,13 +31,25 @@ a {
 	background-color: rgb(89, 171, 238);
 }
 
+p~a {
+	background-color: none;
+	padding: 0;
+	margin: 0px;	
+	border-radius: 0px;
+}
+
+.door-holder {
+	display: inline;
+	width: 100px;
+}
+
 a:hover{
 	box-shadow: 2px 2px 3px rgb(179, 176, 176);
 	filter: brightness(105%)
 }
 
 #about {
-	font-family: "roboto-medium";
+	font-family: "roboto-regular";
 }
 
 .project-card {
