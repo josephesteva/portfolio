@@ -21,7 +21,7 @@ h2 {
 	font-family: "roboto-medium";
 }
 
-a {
+.link-buttons>a {
 	margin: 1em;
 	padding: .5em;
 	margin-bottom: 5em;
@@ -30,18 +30,34 @@ a {
 	font-weight: 600;
 	background-color: rgb(89, 171, 238);
 }
+/* a {
+	margin: 1em;
+	padding: .5em;
+	margin-bottom: 5em;
+	border-radius: 6px;
+	color: white!important;
+	font-weight: 600;
+	background-color: rgb(89, 171, 238);
+} */
 
-p~a {
+/* p~a {
 	background-color: none;
 	padding: 0;
 	margin: 0px;	
 	border-radius: 0px;
-}
+} */
 
-.door-holder {
+/* span>a {
+	background-color: none;
+	padding: 0;
+	margin: 0px;	
+	border-radius: 0px;
+} */
+
+/* .door-holder {
 	display: inline;
 	width: 100px;
-}
+} */
 
 a:hover{
 	box-shadow: 2px 2px 3px rgb(179, 176, 176);
@@ -53,5 +69,5 @@ a:hover{
 }
 
 .project-card {
-width: 800px;
+width: 84vw;
 }

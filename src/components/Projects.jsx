@@ -4,7 +4,7 @@ import { projectData } from "../projectData";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center mt-10 mb-2">
+    <div id="projects" className="flex flex-col justify-end items-end mt-10 mb-2">
       <h2 className="project-card text-3xl">Projects</h2>
       {projectData.map((project) => (
         <Project project={project} />
