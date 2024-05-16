@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { projectData } from "../projectData";
 
 export default function Header() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -23,14 +24,20 @@ export default function Header() {
             <a href="#projects">Projects</a>
           </span>
           <span onMouseEnter={showDropdown} onMouseLeave={hideDropdown} className="bg-sky-700">
-            Projects
+            <a href="#projects">Projects</a>
             {isDropdownVisible ? (
-              <div className="bg-sky-700 fixed">
-                <a className="">Project 2</a>
-                <a className="">Project 1</a>
-                <a className="">Project 3</a>
+              <div className="flex gap-3 flex-col items-start bg-sky-700 fixed">
+                {projectData.map((project) => {
+                  return <a href={`#${project.id}`}>{project.title}</a>;
+                  // "Hello";
+                })}
               </div>
-            ) : null}
+            ) : // <div className="flex gap-3 flex-col bg-sky-700 fixed">
+            //   <a href={`#${projectData[0].id}`}>Project 1</a>
+            //   <a className="">Project 2</a>
+            //   <a className="">Project 3</a>
+            // </div>
+            null}
           </span>
           <span className="flex gap-1">
             <span>Retro 2D Porfolio:</span>

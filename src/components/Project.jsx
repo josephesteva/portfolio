@@ -3,7 +3,7 @@ import React from "react";
 export default function Project({ project }) {
   return (
     <>
-      <div className="flex m-10 justify-center bg-sky-200">
+      <div id={project.id} className="flex m-10 justify-center bg-slate-200">
         <div className="project-card flex flex-col border-2 border-blue-500 p-5 rounded-md shadow-md shadow-sky-300 hover:shadow-lg hover:shadow-sky-500">
           <div className="flex justify-between pb-3 border-b-2 border-blue-300">
             <h3 className="text-3xl font-semibold">{project.title}</h3>
