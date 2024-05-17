@@ -61,10 +61,23 @@ export default function Project({ project }) {
                     alt={project.title}
                   />
                 ))}
-                <div className="w-full flex justify-around">
+                <div className="w-full flex justify-between">
                   <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handelLeft}>
                     Left
                   </button>
+                  <div>
+                    {project.images.map((image, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImage(index)}
+                        className={
+                          currentImage === index
+                            ? "m-1 w-4 h-4 border-2 border-black rounded-lg bg-blue-500"
+                            : "m-1 w-4 h-4 border-2 border-black rounded-lg bg-white"
+                        }
+                      ></button>
+                    ))}
+                  </div>
                   <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handleRight}>
                     Right
                   </button>
