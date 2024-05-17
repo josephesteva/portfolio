@@ -54,7 +54,7 @@ export default function Project({ project }) {
                     key={image}
                     className={
                       index === currentImage
-                        ? "my-1 border-4 border-blue-300 visible"
+                        ? "my-1 border-4 border-blue-300 w-full h-52 visible"
                         : "my-1 border-4 border-blue-300 hidden"
                     }
                     src={image}

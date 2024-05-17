@@ -7,7 +7,7 @@ export const projectData = [
 		siteLink: 'https://josephesteva.github.io/tetris/',
 		githubLink: 'https://github.com/josephesteva/tetris',
 		images: [
-
+			'/images/tetross1.png', '/images/tetross2.png', '/images/tetross3.png'
 		]
 	},
 	{
@@ -18,7 +18,7 @@ export const projectData = [
 		siteLink: 'https://deckbuilder.onrender.com/',
 		githubLink: 'https://github.com/josephesteva/DeckBuilder',
 		images: [
-			'/images/deckbuilder1.png', '/images/deckbuilder2.png', '/images/deckbuilder1.png'
+			'/images/deckbuilder1.png', '/images/deckbuilder2.png', '/images/deckbuilder3.png'
 		]
 	},
 	{
@@ -29,7 +29,7 @@ export const projectData = [
 		siteLink: "TODO",
 		githubLink: "TODO",
 		images: [
-
+			'/images/gameportfolio1.png', '/images/gameportfolio2.png', '/images/gameportfolio3.png'
 		]
 	}
 
