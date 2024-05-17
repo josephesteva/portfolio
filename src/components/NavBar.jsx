@@ -28,7 +28,11 @@ export default function Header() {
             {isDropdownVisible ? (
               <div className="flex gap-3 flex-col items-start bg-sky-700 fixed">
                 {projectData.map((project) => {
-                  return <a href={`#${project.id}`}>{project.title}</a>;
+                  return (
+                    <a key={project.id} href={`#${project.id}`}>
+                      {project.title}
+                    </a>
+                  );
                   // "Hello";
                 })}
               </div>

@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Project({ project }) {
+  const [images, setImages] = useState(project.images);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const handelLeft = () => {
+    if (currentImage > 0) {
+      setCurrentImage(currentImage - 1);
+    } else {
+      setCurrentImage(images.length - 1);
+    }
+  };
+
+  const handleRight = () => {
+    if (currentImage < images.length - 1) {
+      setCurrentImage(currentImage + 1);
+    } else {
+      setCurrentImage(0);
+    }
+  };
+
   return (
     <>
       <div id={project.id} className="flex m-10 justify-center bg-slate-200">
@@ -17,7 +36,7 @@ export default function Project({ project }) {
             </div>
           </div>
           <div className="flex justify-between p-5">
-            <div className="w-2/3">
+            <div className="w-3/5">
               <div className="mb-5">
                 <h3 className="text-2xl underline">Description</h3>
                 <p>{project.description}</p>
@@ -27,9 +46,30 @@ export default function Project({ project }) {
                 <p>{project.tech}</p>
               </div>
             </div>
-            <div>
+            <div className="w-2/5 ml-5">
               <h3>Screenshots</h3>
-              <img src={"/images/BobRossBlock.png"} alt="A picture" />
+              <div className="project-pics">
+                {project.images.map((image, index) => (
+                  <img
+                    key={image}
+                    className={
+                      index === currentImage
+                        ? "my-1 border-4 border-blue-300 visible"
+                        : "my-1 border-4 border-blue-300 hidden"
+                    }
+                    src={image}
+                    alt={project.title}
+                  />
+                ))}
+                <div className="w-full flex justify-around">
+                  <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handelLeft}>
+                    Left
+                  </button>
+                  <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handleRight}>
+                    Right
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -31,6 +31,16 @@ h2 {
 	background-color: rgb(89, 171, 238);
 }
 
+.project-pics {
+	overflow-y: auto;
+	max-height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* margin-left: 1rem; */
+	width: 90%;
+}
+
 a:hover{
 	box-shadow: 2px 2px 3px rgb(179, 176, 176);
 	filter: brightness(105%)
