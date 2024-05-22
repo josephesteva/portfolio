@@ -18,12 +18,17 @@ function About() {
             solutions to meaningful problems. I enjoy collaborating with a team to bring exciting applications to life.
             I love to spend time outdoors in my free time and am a fan of skiing, rock climbing, and mountain biking!
           </p>
-          <div className="flex justify-center gap-10">
+          <div className="flex justify-center gap-8 items-center">
             <a href="https://github.com/josephesteva" target="_blank">
-              <GitHubIcon fontSize="large" style={{ transform: "scale(1.5)" }} />
+              <GitHubIcon fontSize="large" style={{ fontSize: 54 }} className="icon" />
             </a>
             <a href="https://www.linkedin.com/in/joseph-esteva" target="_blank">
-              <LinkedInIcon fontSize="large" style={{ transform: "scale(1.7)" }} />
+              <LinkedInIcon fontSize="large" style={{ fontSize: 64 }} className="icon" />
+            </a>
+            <a href="" className="hover:underline">
+              <button className="p-2 border-4 text-lg border-sky-600 rounded text-black hover:bg-sky-600 hover:border-sky-900 hover:text-white">
+                Resume
+              </button>
             </a>
           </div>
         </div>

@@ -44,6 +44,10 @@ a:hover{
 	filter: brightness(105%)
 }
 
+.icon:hover {
+	color: rgb(12,74,110)
+}
+
 #about {
 	font-family: "roboto-regular";
 }
