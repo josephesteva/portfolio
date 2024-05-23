@@ -20,28 +20,20 @@ export default function Header() {
           <span>
             <a href="#about">About</a>
           </span>
-          <span>
-            <a href="#projects">Projects</a>
-          </span>
           <span onMouseEnter={showDropdown} onMouseLeave={hideDropdown} className="bg-sky-700">
             <a href="#projects">Projects</a>
             {isDropdownVisible ? (
-              <div className="flex gap-3 flex-col items-start bg-sky-700 fixed">
+              <div className="mt-1 rounded-b-md flex gap-3 flex-col items-start bg-sky-700 fixed w-48">
                 {projectData.map((project) => {
                   return (
-                    <a key={project.id} href={`#${project.id}`}>
+                    <a key={project.id} href={`#${project.id}`} className="text-left px-2 w-full hover:bg-sky-500">
                       {project.title}
                     </a>
                   );
                   // "Hello";
                 })}
               </div>
-            ) : // <div className="flex gap-3 flex-col bg-sky-700 fixed">
-            //   <a href={`#${projectData[0].id}`}>Project 1</a>
-            //   <a className="">Project 2</a>
-            //   <a className="">Project 3</a>
-            // </div>
-            null}
+            ) : null}
           </span>
           <span className="flex gap-1">
             <span>Retro 2D Porfolio:</span>

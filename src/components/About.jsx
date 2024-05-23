@@ -5,13 +5,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function About() {
   return (
     <>
-      <div id="about" className="flex justify-center">
+      <div id="about" className="flex justify-center scroll-m-9">
         <img src="/images/PortfolioPic2.png" className="rounded-full w-1/4" />
       </div>
       <h1 className="text-6xl text-sky-700 font-bold text-center mt-5 ">JOE ESTEVA</h1>
       <h2 className="text-3xl text-sky-400 italic text-center mt-2">Software Engineer</h2>
       <div id="about" className="flex justify-center mt-10">
-        <div className="w-1/2">
+        <div className="w-2/3">
           <h3 className="text-2xl font-bold">About</h3>
           <p className="mb-10">
             I'm a fullstack web developer based in the Washington DC area. I am passionate about finding efficient
