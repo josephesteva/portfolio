@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import TechIcon from "./TechIcon";
 
 export default function Project({ project }) {
   const [images, setImages] = useState(project.images);
@@ -46,10 +47,11 @@ export default function Project({ project }) {
               <div>
                 <h3 className="text-2xl underline">Tech</h3>
                 <p>{project.tech}</p>
+                <TechIcon techIcons={project.techIcons} />
               </div>
             </div>
             <div className="w-[448px] ml-5 flex flex-col">
-              <h3>Screenshots</h3>
+              <h3 className="text-2xl underline">Screenshots</h3>
               <div className="project-pics">
                 {project.images.map((image, index) => (
                   <img

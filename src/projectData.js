@@ -8,6 +8,19 @@ export const projectData = [
 		githubLink: 'https://github.com/josephesteva/tetris',
 		images: [
 			'/images/tetross1.png', '/images/tetross2.png', '/images/tetross3.png'
+		],
+		techIcons: [
+			{
+				name: 'JavaScript',
+				path: '/images/icons/javascript.png'
+			}, {
+				name: 'HTML5',
+				path: '/images/icons/html.png'
+			},
+			{
+				name: 'CSS3',
+				path: '/images/icons/css.png'
+			},
 		]
 	},
 	{
@@ -19,6 +32,32 @@ export const projectData = [
 		githubLink: 'https://github.com/josephesteva/DeckBuilder',
 		images: [
 			'/images/deckbuilder1.png', '/images/deckbuilder2.png', '/images/deckbuilder3.png'
+		],
+		techIcons: [
+			{
+				name: 'React',
+				path: '/images/icons/react.png'
+			},
+			{
+				name: 'JavaScript',
+				path: '/images/icons/javascript.png'
+			},
+			{
+				name: 'CSS3',
+				path: '/images/icons/css.png'
+			},
+			{
+				name: 'NodeJS',
+				path: '/images/icons/nodejs.png'
+			},
+			{
+				name: 'Prisma',
+				path: '/images/icons/prisma.png'
+			},
+			{
+				name: 'PostgreSQL',
+				path: '/images/icons/postgresql.png'
+			}
 		]
 	},
 	{
@@ -30,6 +69,23 @@ export const projectData = [
 		githubLink: "TODO",
 		images: [
 			'/images/gameportfolio1.png', '/images/gameportfolio2.png', '/images/gameportfolio3.png'
+		],
+		techIcons: [
+			{
+				name: 'JavaScript',
+				path: '/images/icons/javascript.png'
+			}, {
+				name: 'HTML5',
+				path: '/images/icons/html.png'
+			},
+			{
+				name: 'CSS3',
+				path: '/images/icons/css.png'
+			},
+			{
+				name: 'KaboomJS',
+				path: '/images/icons/kaboomjs.png'
+			},
 		]
 	}
 

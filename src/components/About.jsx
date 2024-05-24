@@ -12,8 +12,8 @@ function About() {
       <h2 className="text-3xl text-sky-400 italic text-center mt-2">Software Engineer</h2>
       <div id="about" className="flex justify-center mt-10">
         <div className="w-2/3">
-          <h3 className="text-2xl font-bold">About</h3>
-          <p className="mb-10">
+          {/* <h2 className="mb-5 text-3xl">About</h2> */}
+          <p className="text-lg mb-10">
             I'm a fullstack web developer based in the Washington DC area. I am passionate about finding efficient
             solutions to meaningful problems. I enjoy collaborating with a team to bring exciting applications to life.
             I love to spend time outdoors in my free time and am a fan of skiing, rock climbing, and mountain biking!
