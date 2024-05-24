@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import TechIcon from "./TechIcon";
+import TechIcon from "./TechIcons";
 
 export default function Project({ project }) {
   const [images, setImages] = useState(project.images);
