@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <div className="flex justify-center">
         <img src="/images/PortfolioPic2.png" className="rounded-full w-1/4" />
       </div>
@@ -11,6 +11,6 @@ export default function Header() {
       <aside className="float-left absolute">
         {/* <div className="w-48 h-48 bg-blue-800">This is aside number 2</div> */}
       </aside>
-    </div>
+    </header>
   );
 }

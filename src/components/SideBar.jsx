@@ -1,8 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { projectData } from "../projectData";
 
 export default function SideBar() {
   const [stick, setStick] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      const headerPositionBottom = document.querySelector("header").offsetHeight;
+      if (window.scrollY >= headerPositionBottom) {
+        // asideToggle.classList.add('fixed');
+        // aside.classList.add('fixed');
+        setStick(true);
+      } else {
+        // asideToggle.classList.remove('fixed');
+        // aside.classList.remove('fixed');
+        setStick(false);
+      }
+    });
+  }, []);
 
   return (
     <div className={!stick ? "absolute mt-10" : "fixed top-10"}>
@@ -17,10 +32,8 @@ export default function SideBar() {
                 {project.title}
               </a>
             );
-            // "Hello";
           })}
         </div>
-        <button onClick={() => setStick(!stick)}>Stick</button>
       </aside>
     </div>
   );
