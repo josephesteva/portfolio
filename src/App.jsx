@@ -8,11 +8,13 @@ import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      <NavBar />
-      <Header />
-      <SideBar />
-      <About />
-      <Projects />
+      <div class="background-image">
+        <NavBar />
+        <Header />
+        <SideBar />
+        <About />
+        <Projects />
+      </div>
     </>
   );
 }

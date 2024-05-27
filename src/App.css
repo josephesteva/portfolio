@@ -21,6 +21,22 @@ h2 {
 	font-family: "roboto-medium";
 }
 
+.background-image:before {
+	content: ' ';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('/images/mountains.png');
+  background-repeat: no-repeat;
+  background-position: 20% 10%;
+  background-size: cover;
+	z-index: -1;
+}
+
 .link-buttons>a {
 	margin: 1em;
 	padding: .5em;
