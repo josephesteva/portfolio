@@ -5,8 +5,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function About() {
   return (
     <>
-      <div id="about" className="flex justify-center scroll-m-9"></div>
-      <div id="about" className="flex justify-center mt-10">
+      {/* <p className="text-center">About test</p> */}
+      <div id="about" className="flex justify-center mt-10 mx-24 scroll-m-12">
         <div className="w-2/3">
           {/* <h2 className="mb-5 text-3xl">About</h2> */}
           <p className="text-lg mb-10">
