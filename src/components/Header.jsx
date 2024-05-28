@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <div className="flex justify-center">
-        <img src="/images/PortfolioPic2.png" className="rounded-full w-1/4" />
+        <img src="/images/PortfolioPic2.png" className="rounded-full w-1/4 mt-10" />
       </div>
       <h1 className="text-6xl text-sky-700 font-bold text-center mt-5 ">JOE ESTEVA</h1>
       <h2 className="text-3xl text-sky-700 italic text-center mt-2">Software Engineer</h2>

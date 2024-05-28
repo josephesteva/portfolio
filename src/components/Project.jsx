@@ -62,7 +62,7 @@ export default function Project({ project }) {
                   />
                 ))}
                 <div className="w-full flex justify-between">
-                  <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handelLeft}>
+                  <button className="px-4 py-1 border-1 bg-white rounded-md dark:bg-slate-700" onClick={handelLeft}>
                     <ArrowBackIcon />
                   </button>
                   <div>
@@ -73,12 +73,12 @@ export default function Project({ project }) {
                         className={
                           currentImage === index
                             ? "m-1 w-4 h-4 rounded-lg bg-blue-500"
-                            : "m-1 w-4 h-4 rounded-lg bg-white"
+                            : "m-1 w-4 h-4 rounded-lg bg-white dark:bg-slate-700"
                         }
                       ></button>
                     ))}
                   </div>
-                  <button className="px-4 py-1 border-1 bg-white rounded-md" onClick={handleRight}>
+                  <button className="px-4 py-1 border-1 bg-white rounded-md dark:bg-slate-700" onClick={handleRight}>
                     <ArrowForwardIcon />
                   </button>
                 </div>

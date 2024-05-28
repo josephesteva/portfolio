@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { projectData } from "../projectData";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 export default function SideBar() {
-  const [stick, setStick] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMode = () => {
-    console.log("toggle");
     const html = document.querySelector("html");
+    html.classList.toggle("dark");
+    setIsDarkMode(!isDarkMode);
+
     // if (localStorage.theme === "dark") {
     //   window.localStorage.setItem("theme", "light");
     //   document.html.classList.remove("dark");
@@ -14,27 +19,27 @@ export default function SideBar() {
     //   window.localStorage.setItem("theme", "dark");
     //   document.html.classList.add("dark");
     // }
-    html.classList.toggle("dark");
   };
 
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const headerPositionBottom = document.querySelector("header").offsetHeight;
-      if (window.scrollY >= headerPositionBottom) {
+      console.log(window.scrollY);
+      if (window.scrollY >= headerPositionBottom - 56) {
         // asideToggle.classList.add('fixed');
         // aside.classList.add('fixed');
-        setStick(true);
+        setIsSticky(true);
       } else {
         // asideToggle.classList.remove('fixed');
         // aside.classList.remove('fixed');
-        setStick(false);
+        setIsSticky(false);
       }
     });
   }, []);
 
   return (
-    <div className={!stick ? "absolute mt-10" : "fixed top-10"}>
-      <aside className="flex flex-col gap-2 items-start [&>a:hover]:bg-sky-500 dark:bg-slate-700">
+    <div className={!isSticky ? "absolute mt-10 mx-5" : "fixed top-24 mx-5"}>
+      <aside className="flex flex-col gap-2 text-xl items-start [&>a:hover]:bg-sky-500 dark:bg-slate-700">
         <h2>Nav</h2>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -47,7 +52,14 @@ export default function SideBar() {
             );
           })}
         </div>
-        <button onClick={toggleMode}>Toggle Mode</button>
+        <button
+          onClick={toggleMode}
+          className={
+            isDarkMode ? "transition duration-1000 hover:rotate-180" : "transition duration-1000 hover:rotate-[360deg]"
+          }
+        >
+          {!isDarkMode ? <DarkModeIcon fontSize="large" /> : <LightModeIcon fontSize="large" />}
+        </button>
       </aside>
     </div>
   );
