@@ -4,6 +4,19 @@ import { projectData } from "../projectData";
 export default function SideBar() {
   const [stick, setStick] = useState(false);
 
+  const toggleMode = () => {
+    console.log("toggle");
+    const html = document.querySelector("html");
+    // if (localStorage.theme === "dark") {
+    //   window.localStorage.setItem("theme", "light");
+    //   document.html.classList.remove("dark");
+    // } else {
+    //   window.localStorage.setItem("theme", "dark");
+    //   document.html.classList.add("dark");
+    // }
+    html.classList.toggle("dark");
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const headerPositionBottom = document.querySelector("header").offsetHeight;
@@ -21,7 +34,7 @@ export default function SideBar() {
 
   return (
     <div className={!stick ? "absolute mt-10" : "fixed top-10"}>
-      <aside className="flex flex-col gap-2 items-start [&>a:hover]:bg-sky-500">
+      <aside className="flex flex-col gap-2 items-start [&>a:hover]:bg-sky-500 dark:bg-slate-700">
         <h2>Nav</h2>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -34,6 +47,7 @@ export default function SideBar() {
             );
           })}
         </div>
+        <button onClick={toggleMode}>Toggle Mode</button>
       </aside>
     </div>
   );

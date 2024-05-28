@@ -8,7 +8,7 @@ import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      <div class="background-image">
+      <div class="background-image" className="background-image dark:bg-slate-700 dark:text-slate-400">
         <NavBar />
         <Header />
         <SideBar />

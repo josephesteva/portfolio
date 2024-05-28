@@ -6,10 +6,10 @@ function About() {
   return (
     <>
       {/* <p className="text-center">About test</p> */}
-      <div id="about" className="flex justify-center mt-10 mx-24 scroll-m-12">
+      <div id="about" className="flex justify-center mt-10 mx-24 scroll-m-12 dark:text-slate-400">
         <div className="w-2/3">
           {/* <h2 className="mb-5 text-3xl">About</h2> */}
-          <p className="text-lg mb-10">
+          <p className="text-lg mb-10 ">
             I'm a fullstack web developer based in the Washington DC area. I am passionate about finding efficient
             solutions to meaningful problems. I enjoy collaborating with a team to bring exciting applications to life.
             I love to spend time outdoors in my free time and am a fan of skiing, rock climbing, and mountain biking!
