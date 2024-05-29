@@ -61,10 +61,21 @@ export default function Project({ project }) {
                     alt={project.title}
                   />
                 ))}
-                <div className="w-full flex justify-between">
-                  <button className="px-4 py-1 border-1 bg-white rounded-md dark:bg-slate-700" onClick={handelLeft}>
+                <div className="w-full -mt-8 relative bottom-[10px] flex justify-between">
+                  <button
+                    className="px-4 py-1 border-1 ml-1 bg-white rounded-md dark:bg-slate-700"
+                    onClick={handelLeft}
+                  >
                     <ArrowBackIcon />
                   </button>
+                  <button
+                    className="px-4 py-1 border-1 mr-1 bg-white rounded-md dark:bg-slate-700"
+                    onClick={handleRight}
+                  >
+                    <ArrowForwardIcon />
+                  </button>
+                </div>
+                <div className="w-full flex justify-around">
                   <div>
                     {project.images.map((image, index) => (
                       <button
@@ -78,9 +89,6 @@ export default function Project({ project }) {
                       ></button>
                     ))}
                   </div>
-                  <button className="px-4 py-1 border-1 bg-white rounded-md dark:bg-slate-700" onClick={handleRight}>
-                    <ArrowForwardIcon />
-                  </button>
                 </div>
               </div>
             </div>

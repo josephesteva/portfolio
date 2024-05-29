@@ -39,14 +39,14 @@ export default function SideBar() {
 
   return (
     <div className={!isSticky ? "absolute mt-10 mx-5" : "fixed top-24 mx-5"}>
-      <aside className="flex flex-col gap-2 text-xl items-start [&>a:hover]:bg-sky-500 dark:bg-slate-700">
+      <aside className="sidebar flex flex-col gap-2 text-xl items-start [&>a:hover]:bg-sky-500 dark:bg-slate-700">
         <h2>Nav</h2>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <div className="mt-1 flex gap-3 flex-col items-start">
           {projectData.map((project) => {
             return (
-              <a key={project.id} href={`#${project.id}`} className="text-left px-2 hover:bg-sky-500">
+              <a key={project.id} href={`#${project.id}`} className="text-left text-wrap px-2 hover:bg-sky-500">
                 {project.title}
               </a>
             );

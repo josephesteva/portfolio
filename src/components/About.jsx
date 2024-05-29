@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       {/* <p className="text-center">About test</p> */}
-      <div id="about" className="flex justify-center mt-10 mx-24 scroll-m-12 dark:text-slate-400">
+      <div id="about" className="flex justify-center mt-10 mx-24 scroll-m-10 dark:text-slate-400">
         <div className="w-2/3">
           {/* <h2 className="mb-5 text-3xl">About</h2> */}
           <p className="text-lg mb-10 ">
