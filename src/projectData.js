@@ -7,19 +7,19 @@ export const projectData = [
 		siteLink: 'https://josephesteva.github.io/tetris/',
 		githubLink: 'https://github.com/josephesteva/tetris',
 		images: [
-			'/images/tetross1.png', '/images/tetross2.png', '/images/tetross3.png'
+			'/portfolio/images/tetross1.png', '/portfolio/images/tetross2.png', '/portfolio/images/tetross3.png'
 		],
 		techIcons: [
 			{
 				name: 'JavaScript',
-				path: '/images/icons/javascript.png'
+				path: '/portfolio/images/icons/javascript.png'
 			}, {
 				name: 'HTML5',
-				path: '/images/icons/html.png'
+				path: '/portfolio/images/icons/html.png'
 			},
 			{
 				name: 'CSS3',
-				path: '/images/icons/css.png'
+				path: '/portfolio/images/icons/css.png'
 			},
 		]
 	},
@@ -31,36 +31,36 @@ export const projectData = [
 		siteLink: 'https://deckbuilder.onrender.com/',
 		githubLink: 'https://github.com/josephesteva/DeckBuilder',
 		images: [
-			'/images/deckbuilder1.png', '/images/deckbuilder2.png', '/images/deckbuilder3.png'
+			'/portfolio/images/deckbuilder1.png', '/portfolio/images/deckbuilder2.png', '/portfolio/images/deckbuilder3.png'
 		],
 		techIcons: [
 			{
 				name: 'React',
-				path: '/images/icons/react.png'
+				path: '/portfolio/images/icons/react.png'
 			},
 			{
 				name: 'JavaScript',
-				path: '/images/icons/javascript.png'
+				path: '/portfolio/images/icons/javascript.png'
 			},
 			{
 				name: 'CSS3',
-				path: '/images/icons/css.png'
+				path: '/portfolio/images/icons/css.png'
 			},
 			{
 				name: 'NodeJS',
-				path: '/images/icons/nodejs.png'
+				path: '/portfolio/images/icons/nodejs.png'
 			},
 			{
 				name: 'Express',
-				path: '/images/icons/express.png'
+				path: '/portfolio/images/icons/express.png'
 			},
 			{
 				name: 'Prisma',
-				path: '/images/icons/prisma.png'
+				path: '/portfolio/images/icons/prisma.png'
 			},
 			{
 				name: 'PostgreSQL',
-				path: '/images/icons/postgresql.png'
+				path: '/portfolio/images/icons/postgresql.png'
 			}
 		]
 	},
@@ -72,23 +72,23 @@ export const projectData = [
 		siteLink: "TODO",
 		githubLink: "TODO",
 		images: [
-			'/images/gameportfolio1.png', '/images/gameportfolio2.png', '/images/gameportfolio3.png'
+			'/portfolio/images/gameportfolio1.png', '/portfolio/images/gameportfolio2.png', '/portfolio/images/gameportfolio3.png'
 		],
 		techIcons: [
 			{
 				name: 'JavaScript',
-				path: '/images/icons/javascript.png'
+				path: '/portfolio/images/icons/javascript.png'
 			}, {
 				name: 'HTML5',
-				path: '/images/icons/html.png'
+				path: '/portfolio/images/icons/html.png'
 			},
 			{
 				name: 'CSS3',
-				path: '/images/icons/css.png'
+				path: '/portfolio/images/icons/css.png'
 			},
 			{
 				name: 'KaboomJS',
-				path: '/images/icons/kaboomjs.png'
+				path: '/portfolio/images/icons/kaboomjs.png'
 			},
 		]
 	}
