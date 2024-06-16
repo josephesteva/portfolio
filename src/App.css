@@ -72,6 +72,10 @@ h2 {
 	color: rgb(12,74,110)
 }
 
+.tech-icon-text {
+	font-family: "roboto-medium";
+}
+
 #about {
 	font-family: "roboto-regular";
 }

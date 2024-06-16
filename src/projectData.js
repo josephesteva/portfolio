@@ -3,11 +3,11 @@ export const projectData = [
 		id: 'tetross',
 		title: 'TetRoss',
 		description: 'A tetris clone with a fun twist, implemented to practice DOM manipulation using basic HTML, CSS, and JavaScript. The game features block manipulation, scoring, leveling, increasing difficulty, music, and variable styling.',
-		tech: 'The basse game board was set up using html and css. The game logic and other functionalities were implemented using Javascript to manipulate the DOM, primarily via updates to CSS as the game progresses.',
+		tech: 'The base game board was set up using html and css. The game logic and other functionalities were implemented using Javascript to manipulate the DOM, primarily via updates to CSS as the game progresses.',
 		siteLink: 'https://josephesteva.github.io/tetris/',
 		githubLink: 'https://github.com/josephesteva/tetris',
 		images: [
-			'/portfolio/images/tetross1.png', '/portfolio/images/tetross2.png', '/portfolio/images/tetross3.png'
+			'/portfolio/images/tetross2.png', '/portfolio/images/tetross3.png', '/portfolio/images/tetross4.png'
 		],
 		techIcons: [
 			{

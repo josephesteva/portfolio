@@ -23,7 +23,7 @@ export default function TechIcon({ icon }) {
         />
       </div>
       {isHovered ? (
-        <div className="absolute -mt-3 ml-9 px-2 border border-black rounded-sm bg-sky-400 text-white font-semibold ">
+        <div className="tech-icon-text absolute -mt-3 ml-9 px-2 border border-black rounded-sm bg-sky-400 text-white">
           {icon.name}
         </div>
       ) : null}
