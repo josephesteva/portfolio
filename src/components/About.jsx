@@ -23,6 +23,7 @@ function About() {
             </a>
             <a
               href="https://drive.google.com/file/d/1fE6hBqKjZxz1MAQ9KWY_FV97C2doiWSQ/view"
+              target="_blank"
               className="hover:underline"
             >
               <button className="p-2 border-4 text-lg border-sky-600 rounded text-black hover:bg-sky-600 hover:border-sky-900 hover:text-white">
