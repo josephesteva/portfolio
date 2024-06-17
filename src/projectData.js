@@ -67,10 +67,10 @@ export const projectData = [
 	{
 		id: 'game-portfolio',
 		title: 'Retro Game Portfolio',
-		description: 'This project was created to offer an alternative version of my portfolio that is customizable and interactive',
-		tech: 'JavaScript, Kaboom, HTML, CSS',
-		siteLink: "TODO",
-		githubLink: "TODO",
+		description: 'This project was created to offer an alternative version of my portfolio that is customizable and interactive!',
+		tech: 'The skeleton and positioning for the application was set up using basic HTML and CSS. The scripting was done JavaScript with Kaboom JS serving as the game engine.',
+		siteLink: "https://josephesteva.github.io/2d-game-portfolio/",
+		githubLink: "https://github.com/josephesteva/2d-game-portfolio",
 		images: [
 			'/portfolio/images/gameportfolio1.png', '/portfolio/images/gameportfolio2.png', '/portfolio/images/gameportfolio3.png'
 		],

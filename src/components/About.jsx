@@ -21,7 +21,10 @@ function About() {
             <a href="https://www.linkedin.com/in/joseph-esteva" target="_blank">
               <LinkedInIcon style={{ fontSize: 64 }} className="icon" />
             </a>
-            <a href="" className="hover:underline">
+            <a
+              href="https://drive.google.com/file/d/1fE6hBqKjZxz1MAQ9KWY_FV97C2doiWSQ/view"
+              className="hover:underline"
+            >
               <button className="p-2 border-4 text-lg border-sky-600 rounded text-black hover:bg-sky-600 hover:border-sky-900 hover:text-white">
                 Resume
               </button>
